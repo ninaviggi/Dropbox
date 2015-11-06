@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C0F996D71BEB1BB100248BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F996D61BEB1BB100248BA6 /* AppDelegate.swift */; };
-		C0F996D91BEB1BB100248BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F996D81BEB1BB100248BA6 /* ViewController.swift */; };
-		C0F996DC1BEB1BB100248BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F996DA1BEB1BB100248BA6 /* Main.storyboard */; };
 		C0F996DE1BEB1BB100248BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F996DD1BEB1BB100248BA6 /* Assets.xcassets */; };
 		C0F996E11BEB1BB100248BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F996DF1BEB1BB100248BA6 /* LaunchScreen.storyboard */; };
 		C0F996EC1BEB1BB100248BA6 /* dropbox_wk1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F996EB1BEB1BB100248BA6 /* dropbox_wk1Tests.swift */; };
 		C0F996F71BEB1BB100248BA6 /* dropbox_wk1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F996F61BEB1BB100248BA6 /* dropbox_wk1UITests.swift */; };
+		C0F997051BEBFE9F00248BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F997041BEBFE9F00248BA6 /* Main.storyboard */; };
+		C0F997091BEC1EA200248BA6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F997081BEC1EA200248BA6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		C0F996D31BEB1BB100248BA6 /* dropbox_wk1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropbox_wk1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F996D61BEB1BB100248BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0F996D81BEB1BB100248BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0F996DB1BEB1BB100248BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0F996DD1BEB1BB100248BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F996E01BEB1BB100248BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0F996E21BEB1BB100248BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		C0F996F21BEB1BB100248BA6 /* dropbox_wk1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dropbox_wk1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F996F61BEB1BB100248BA6 /* dropbox_wk1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropbox_wk1UITests.swift; sourceTree = "<group>"; };
 		C0F996F81BEB1BB100248BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F997041BEBFE9F00248BA6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C0F997081BEC1EA200248BA6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				C0F996D61BEB1BB100248BA6 /* AppDelegate.swift */,
-				C0F996D81BEB1BB100248BA6 /* ViewController.swift */,
-				C0F996DA1BEB1BB100248BA6 /* Main.storyboard */,
+				C0F997081BEC1EA200248BA6 /* SettingsViewController.swift */,
 				C0F996DD1BEB1BB100248BA6 /* Assets.xcassets */,
+				C0F997041BEBFE9F00248BA6 /* Main.storyboard */,
 				C0F996DF1BEB1BB100248BA6 /* LaunchScreen.storyboard */,
 				C0F996E21BEB1BB100248BA6 /* Info.plist */,
 			);
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F997051BEBFE9F00248BA6 /* Main.storyboard in Resources */,
 				C0F996E11BEB1BB100248BA6 /* LaunchScreen.storyboard in Resources */,
 				C0F996DE1BEB1BB100248BA6 /* Assets.xcassets in Resources */,
-				C0F996DC1BEB1BB100248BA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F996D91BEB1BB100248BA6 /* ViewController.swift in Sources */,
 				C0F996D71BEB1BB100248BA6 /* AppDelegate.swift in Sources */,
+				C0F997091BEC1EA200248BA6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C0F996DA1BEB1BB100248BA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0F996DB1BEB1BB100248BA6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C0F996DF1BEB1BB100248BA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
